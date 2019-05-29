@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Preview</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="app/routing.js"></script>
+    <script src="app/allUsersController.js"></script>
+</head>
+<body ng-app="App">
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#search"><i class="material-icons">search</i></a></li>
+            <li><a href="#users"><i class="material-icons">view_module</i></a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+
+
+    <div ng-view></div>
+</div>
+
+</body>
+</html>
